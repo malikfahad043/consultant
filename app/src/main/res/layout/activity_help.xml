@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:padding="16dp"
+        android:text="Help"
+        android:textColor="#455A64"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. How to create a new user?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="To create a new user, follow these steps:\n\n- Step 1: Open the application.\n- Step 2: Tap on the 'Create User' button.\n- Step 3: Enter the required information such as name, email, and password.\n- Step 4: Tap on the 'Save' button to create the user.\n- Step 5: The new user will be created and added to the user list." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="2. How to reset the password?"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="If you forgot your password and want to reset it, please follow these steps:\n\n- Step 1: On the login screen, tap on the 'Forgot Password' link.\n- Step 2: Enter your registered email address.\n- Step 3: An email with instructions to reset your password will be sent to your email address.\n- Step 4: Follow the instructions in the email to reset your password." />
+
+            <!-- Add more questions and answers as needed -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0f253f"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".profile">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/house"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chooseImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:paddingHorizontal="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:text="Choose Image" />
+
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext"
+            android:hint="Enter Your Name"
+            android:inputType="text"
+            android:textColorHint="@color/white"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+        <EditText
+            android:id="@+id/emailaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="10dp"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="12dp"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="270dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter Your Email"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="12dp"
+            android:hint="Enter Your Phone Number"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="NotSibling" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginEnd="16dp"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext"
+            android:drawablePadding="12dp"
+            android:hint="Age"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="550dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="110dp"
+                android:text="Male"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio_button_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="660dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:text="Save" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="660dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:text="Update" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="660dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:text="Delete" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

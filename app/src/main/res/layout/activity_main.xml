@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration_page"
+    android:background="#0f253f">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Consultant"
+        android:textColor="#e4e8ea"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login To"
+        android:textColor="#e4e8ea"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="200dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Account  "
+        android:textColor="#e4e8ea"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        />
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Username or Email"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:textColorHint="@color/white"
+        android:background="@drawable/customedit"
+        android:drawablePadding="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+
+        />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:background="@drawable/customedit"
+        android:padding="12dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="12dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410dp"
+        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="textPassword"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="640dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/regbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="660dp"
+        android:background="@color/black"
+        android:text="Registor Now"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:layout_width=""-->
+<!--        android:layout_height=""-->
+<!--        app:menu=""/>-->
+
+</RelativeLayout>
